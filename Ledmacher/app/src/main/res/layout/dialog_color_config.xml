@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/colorConfigCurrentColor"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:background="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/colorConfigRed"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/colorConfigNewColor"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="@+id/colorConfigRed"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <SeekBar
+        android:id="@+id/colorConfigRed"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:max="255"
+        android:progress="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorConfigCurrentColor" />
+
+    <TextView
+        android:id="@+id/colorConfigLabelR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R"
+        app:layout_constraintEnd_toStartOf="@+id/colorConfigRed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/colorConfigRed" />
+
+    <TextView
+        android:id="@+id/colorConfigValueR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Value"
+        app:layout_constraintEnd_toEndOf="@+id/colorConfigRed"
+        app:layout_constraintStart_toStartOf="@+id/colorConfigRed"
+        app:layout_constraintTop_toBottomOf="@+id/colorConfigRed" />
+
+
+    <SeekBar
+        android:id="@+id/colorConfigGreen"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:max="255"
+        android:progress="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/colorConfigValueR" />
+
+    <TextView
+        android:id="@+id/colorConfigLabelG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="G"
+        app:layout_constraintEnd_toStartOf="@+id/colorConfigGreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/colorConfigGreen" />
+
+    <TextView
+        android:id="@+id/colorConfigValueG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Value"
+        app:layout_constraintEnd_toEndOf="@+id/colorConfigGreen"
+        app:layout_constraintStart_toStartOf="@+id/colorConfigGreen"
+        app:layout_constraintTop_toBottomOf="@+id/colorConfigGreen" />
+
+
+    <SeekBar
+        android:id="@+id/colorConfigBlue"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:max="255"
+        android:progress="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/colorConfigValueG" />
+
+    <TextView
+        android:id="@+id/colorConfigLabelB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B"
+        app:layout_constraintEnd_toStartOf="@+id/colorConfigBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/colorConfigBlue" />
+
+    <TextView
+        android:id="@+id/colorConfigValueB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Value"
+        app:layout_constraintEnd_toEndOf="@+id/colorConfigBlue"
+        app:layout_constraintStart_toStartOf="@+id/colorConfigBlue"
+        app:layout_constraintTop_toBottomOf="@+id/colorConfigBlue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

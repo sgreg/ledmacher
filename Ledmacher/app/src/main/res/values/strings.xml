@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Ledmacher</string>
+    <string name="settings_host_text">Backend Host</string>
+    <string name="settings_host_hint">192.168.1.1</string>
+    <string name="settings_port_text">Backend Port</string>
+    <string name="settings_port_hint">5544</string>
+
+    <string name="params_num_leds_text">LEDs</string>
+    <string name="params_wait_color_text">Wait color (ms)</string>
+    <string name="params_wait_color_hint">5000</string>
+    <string name="params_wait_gradient_text">Wait Gradient (ms)</string>
+    <string name="params_wait_gradient_hint">50</string>
+    <string name="params_gradient_steps_text">Gradient Steps</string>
+    <string name="params_gradient_steps_hint">30</string>
+    <string name="params_reset_after_flash_text">Reset device after flash</string>
+
+    <string name="backend_base_url">http://%1$s:%2$s</string>
+
+    <string name="prefs_name">ledmacher.prefs</string>
+    <string name="prefs_key_backend_host">ledmacher.backed.host</string>
+    <string name="prefs_key_backend_port">ledmacher.backend.port</string>
+    <string name="prefs_key_num_leds">ledmacher.params.num_leds</string>
+    <string name="prefs_key_wait_color">ledmacher.params.wait_color</string>
+    <string name="prefs_key_wait_gradient">ledmacher.params.wait_gradient</string>
+    <string name="prefs_key_gradient_steps">ledmacher.params.gradient_steps</string>
+    <string name="prefs_key_reset_after_flash">ledmacher.params.reset_after_flash</string>
+    <string name="device_status_none">No Device</string>
+    <string name="device_status_ledmacher">Ledmacher Bootloader device attached</string>
+    <string name="device_status_removed">Device removed</string>
+
+</resources>

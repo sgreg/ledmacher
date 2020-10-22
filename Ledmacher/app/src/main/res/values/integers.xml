@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="params_num_leds_default">4</integer>
+    <integer name="params_wait_color_default">5000</integer>
+    <integer name="params_wait_gradient_default">50</integer>
+    <integer name="params_gradient_steps_default">30</integer>
+</resources>

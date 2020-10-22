@@ -1,0 +1,23 @@
+# Vim swap files
+**/.*.swp
+
+# backend build directory
+backend/build
+
+# bootloader build files
+bootloader/**/*.o
+bootloader/**/*.lst
+bootloader/**/*.map
+bootloader/**/*.elf
+bootloader/**/*.hex
+
+# device build files
+device/**/*.o
+device/**/*.lst
+device/**/*.map
+device/**/*.elf
+device/**/*.hex
+device/**/*.bin
+
+# Ledmacher app has its own .gitignore
+

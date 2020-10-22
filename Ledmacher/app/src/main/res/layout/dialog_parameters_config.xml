@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SeekBar
+        android:id="@+id/paramNumLeds"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:max="8"
+        android:progress="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/paramLabelNumLeds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/params_num_leds_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/paramNumLeds" />
+
+    <TextView
+        android:id="@+id/paramValueNumLeds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Value"
+        app:layout_constraintEnd_toEndOf="@+id/paramNumLeds"
+        app:layout_constraintStart_toStartOf="@+id/paramNumLeds"
+        app:layout_constraintTop_toBottomOf="@+id/paramNumLeds" />
+
+
+    <TextView
+        android:id="@+id/paramLabelWaitColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/params_wait_color_text"
+        app:layout_constraintBottom_toBottomOf="@+id/paramValueWaitColor"
+        app:layout_constraintStart_toStartOf="@+id/paramLabelNumLeds"
+        app:layout_constraintTop_toTopOf="@+id/paramValueWaitColor" />
+
+    <EditText
+        android:id="@+id/paramValueWaitColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:ems="5"
+        android:hint="@string/params_wait_color_hint"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paramValueNumLeds" />
+
+
+    <TextView
+        android:id="@+id/paramLabelWaitGradient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/params_wait_gradient_text"
+        app:layout_constraintBottom_toBottomOf="@+id/paramValueWaitGradient"
+        app:layout_constraintStart_toStartOf="@+id/paramLabelNumLeds"
+        app:layout_constraintTop_toTopOf="@+id/paramValueWaitGradient" />
+
+    <EditText
+        android:id="@+id/paramValueWaitGradient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="5"
+        android:hint="@string/params_wait_gradient_hint"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="@+id/paramValueWaitColor"
+        app:layout_constraintTop_toBottomOf="@+id/paramValueWaitColor" />
+
+
+    <TextView
+        android:id="@+id/paramLabelGradientSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/params_gradient_steps_text"
+        app:layout_constraintBottom_toBottomOf="@+id/paramValueGradientSteps"
+        app:layout_constraintStart_toStartOf="@+id/paramLabelNumLeds"
+        app:layout_constraintTop_toTopOf="@+id/paramValueGradientSteps" />
+
+    <EditText
+        android:id="@+id/paramValueGradientSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="5"
+        android:hint="@string/params_gradient_steps_hint"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="@+id/paramValueWaitGradient"
+        app:layout_constraintTop_toBottomOf="@+id/paramValueWaitGradient" />
+
+    <TextView
+        android:id="@+id/paramsLabelResetDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/params_reset_after_flash_text"
+        app:layout_constraintBottom_toBottomOf="@+id/paramsValueResetDevice"
+        app:layout_constraintStart_toStartOf="@+id/paramLabelNumLeds"
+        app:layout_constraintTop_toTopOf="@+id/paramsValueResetDevice" />
+
+    <CheckBox
+        android:id="@+id/paramsValueResetDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:checked="true"
+        app:layout_constraintEnd_toEndOf="@+id/paramValueGradientSteps"
+        app:layout_constraintStart_toStartOf="@+id/paramValueGradientSteps"
+        app:layout_constraintTop_toBottomOf="@+id/paramValueGradientSteps" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
