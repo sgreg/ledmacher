@@ -267,12 +267,20 @@ public class MainActivity extends AppCompatActivity
      * Firmware parameters configured in the {@link ParameterConfigDialog} have changed.
      *
      * If we already have a valid firmware, we probably want to rebuild a new one now, so handle
-     * the {@link State} and flash firmware icon accordingly.
+     * the {@link State} and flash firmware icon accordingly. On the other hand, if no firmware
+     * build was requested yet, we don't need to bother with that.
      */
     @Override
     public void onParameterConfigChanged() {
-        setState(State.FIRST_COLOR_CONFIG);
-        handleFlashFirmwareIcon();
+        switch (state) {
+            case RESET:
+            case FIRST_COLOR_CONFIG:
+                // do nothing, we're good
+                break;
+            default:
+                setState(State.FIRST_COLOR_CONFIG);
+                handleFlashFirmwareIcon();
+        }
     }
 
     /**
